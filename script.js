@@ -38,7 +38,5 @@ function genMessage() {
    const m = Math.floor(Math.random() * eventPhrases.length);
    const e = Math.floor(Math.random() * guidancePhrases.length);
 
-   return startPhrases[s] + ' ' + eventPhrases[m] + ' ' + guidancePhrases[e];
+   document.getElementById("message-display").innerHTML = startPhrases[s] + ' ' + eventPhrases[m] + ' ' + guidancePhrases[e];
 }
-
-console.log(genMessage());
